@@ -9,7 +9,7 @@
 ReDimNet2 extends the [ReDimNet](https://github.com/IDRnD/redimnet) dimension-reshaping framework by introducing pooling over the time dimension in the 1D processing pathway. This allows significantly more aggressive channel scaling without proportional compute increase, yielding a strictly better accuracy–efficiency Pareto front at every scale point.
 
 <p align="center">
-  <img src="assets/pareto.png" width="600" alt="Computational Cost vs. Average EER"/>
+  <img src="assets/pareto.png" width="600" height="427" alt="Computational Cost vs. Average EER"/>
 </p>
 
 ## Results
@@ -73,6 +73,15 @@ Pretrained weights are available as GitHub Release assets:
 | B4 | [b4-vox2-ptn.pt](https://github.com/PalabraAI/redimnet2/releases/download/v1.0.0/b4-vox2-ptn.pt) | [b4-vox2-lm.pt](https://github.com/PalabraAI/redimnet2/releases/download/v1.0.0/b4-vox2-lm.pt) |
 | B5 | [b5-vox2-ptn.pt](https://github.com/PalabraAI/redimnet2/releases/download/v1.0.0/b5-vox2-ptn.pt) | [b5-vox2-lm.pt](https://github.com/PalabraAI/redimnet2/releases/download/v1.0.0/b5-vox2-lm.pt) |
 | B6 | [b6-vox2-ptn.pt](https://github.com/PalabraAI/redimnet2/releases/download/v1.0.0/b6-vox2-ptn.pt) | [b6-vox2-lm.pt](https://github.com/PalabraAI/redimnet2/releases/download/v1.0.0/b6-vox2-lm.pt) |
+
+## Roadmap
+
+We are actively working on improving model stability and expanding the release. Planned updates:
+
+- [ ] Release a new version of ReDimNet2 with improved normalization unified for both 1D and 2D feature map representations
+- [ ] Release the training pipeline (VoxCeleb2)
+- [ ] Release VoxBlink2 + VoxCeleb2 pretrained models (B6, B3, distilled B6 → B3)
+- [ ] Release training recipes for VoxBlink2 + VoxCeleb2 training
 
 ## Citation
 
